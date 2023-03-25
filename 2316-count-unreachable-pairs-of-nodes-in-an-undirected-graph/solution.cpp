@@ -43,7 +43,7 @@ public:
 
 /*
 
-TC: O(v + e)
-SC: O(v + e)
+TC: O(n + e)
+SC: O(n + e)
 
 */
