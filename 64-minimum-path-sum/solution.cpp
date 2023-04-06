@@ -12,3 +12,9 @@ public:
         return ans[row][column];
     }
 };
+
+/*
+TC: O(n ^ 2)
+
+SC: O(n ^ 2)
+*/
