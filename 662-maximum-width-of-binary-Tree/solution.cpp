@@ -11,7 +11,7 @@
  */
 class Solution {
 public:
-    void dfs(TreeNode* root, int level, int dis, unordered_map<int, int> &mp, int &mxLen) {
+    void dfs(TreeNode* root, int level, unsigned long long dis, unordered_map<int, unsigned long long> &mp, unsigned long long &mxLen) {
        if(root == nullptr) {
            return;
        }
@@ -26,9 +26,14 @@ public:
     }
 
     int widthOfBinaryTree(TreeNode* root) {
-        unordered_map<int, int> mp;
-        int mxLen = 1;
+        unordered_map<int, unsigned long long> mp;
+        unsigned long long mxLen = 1;
         dfs(root, 0, 1, mp, mxLen);
         return mxLen;
     }
 };
+
+/*
+TC: O(n)
+SC: O(n)
+*/
