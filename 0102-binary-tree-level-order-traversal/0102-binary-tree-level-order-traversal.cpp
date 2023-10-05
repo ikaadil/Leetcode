@@ -20,6 +20,7 @@ public:
         travel(root -> left, levelArray, len + 1, mx);
         travel(root -> right, levelArray, len + 1, mx);
     }
+    
     vector<vector<int>> levelOrder(TreeNode* root) {
         unordered_map<int, vector<int>>levelArray;
         int mx =  -1;
